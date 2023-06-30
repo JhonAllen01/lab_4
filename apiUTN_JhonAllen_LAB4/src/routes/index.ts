@@ -1,0 +1,13 @@
+import { Router } from "express";
+import Cliente from "./Cliente";
+import Factura from "./Factura";
+import Producto from "./Producto";
+import Proovedor from "./Proveedor";
+import Vendedor from "./Vendedor";
+const routes = Router();
+routes.use("/clientes", Cliente);
+routes.use("/facturas", Factura);
+routes.use("/productos", Producto);
+routes.use("/proveedores", Proovedor);
+routes.use("/vendedores", Vendedor);
+export default routes;
